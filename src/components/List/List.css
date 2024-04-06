@@ -1,0 +1,62 @@
+.list{
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+
+.list .list-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.list .list-title h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.list .list-title h4{
+    font-size: 12px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    height: 90%;
+}
+
+ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+}
+
+ul li:hover{
+    background-color: #f9f9f9;
+}
+
+ul li:last-of-type{
+    border-bottom: 1px solid #ccc;
+}
+
+
+ul li .title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ul li.active{
+    background-color: #f9f9f9;
+}
+
+.empty-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}

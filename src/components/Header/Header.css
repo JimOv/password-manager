@@ -1,0 +1,28 @@
+.header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+}
+
+.header p {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 16px;
+  position: relative;
+  transition: color 100ms;
+}
+
+.header p:hover,
+.header p:focus {
+  background-color: #F082AC;
+}
