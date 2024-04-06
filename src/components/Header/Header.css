@@ -3,26 +3,35 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: lightblue;
+    background-color: black;
     align-items: center;
     padding: 0 20px;
     box-sizing: border-box;
+    border-left: 5px solid rgb(218, 48, 58);
     
 }
 
 .header p {
-  background-color: #EA4C89;
+  background-color: rgb(218, 48, 58);
   border-radius: 8px;
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
   font-size: 14px;
-  padding: 10px 16px;
-  position: relative;
-  transition: color 100ms;
+  padding: 14px ;
+  transition: background-color 0.2s ease-in-out 0s;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.header h1{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 .header p:hover,
 .header p:focus {
-  background-color: #F082AC;
+  background-color: rgb(204, 32, 42);
+  outline: none;
 }

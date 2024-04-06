@@ -19,7 +19,6 @@ const ShowLoginDetailsScreen = () => {
           className="card"
           style={{
             backgroundColor: loginList[activeItem].customer.color,
-            color: loginList[activeItem].customer !== "" ? "white" : "black",
           }}
         >
           <h2>Login details</h2>
