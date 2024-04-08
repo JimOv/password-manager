@@ -3,13 +3,7 @@ import { useLoginList } from "../../context/LoginListContext";
 import "./Search.css";
 
 const Search = () => {
-  const {
-    loginList,
-    setLoginList,
-    setFilteredList,
-    activeItem,
-    setActiveItem,
-  } = useLoginList();
+  const { loginList, setFilteredList, setActiveItem } = useLoginList();
 
   const [searchQuery, setSearchQuery] = useState("");
 
