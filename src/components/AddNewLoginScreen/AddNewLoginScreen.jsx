@@ -72,7 +72,9 @@ const AddNewLoginScreen = () => {
       <div className="modal">
         <div>
           <h2>Add new login</h2>
-          <button onClick={close}>X</button>
+          <button onClick={close} className="closeBtn">
+            X
+          </button>
         </div>
         <form onSubmit={(e) => addLoginToList(e)}>
           <label htmlFor="title">Title</label>
@@ -119,8 +121,16 @@ const AddNewLoginScreen = () => {
           </button>
           {password && (
             <>
-              <label className="password">Your generated password:</label>
-              <input type="text" value={password} />
+              <label className="password" htmlFor="generatedPassword">
+                Your generated password:
+              </label>
+              <input
+                type="text"
+                id="generatedPassword"
+                name="generatedPassword"
+                value={password}
+                readOnly
+              />
             </>
           )}
 
@@ -137,8 +147,7 @@ const AddNewLoginScreen = () => {
               </option>
             ))}
           </select>
-
-          <button type="submit">Add</button>
+          <button type="submit">Add login</button>
         </form>
       </div>
     </div>

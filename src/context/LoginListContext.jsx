@@ -14,6 +14,7 @@ export function LoginListThemeProvider({ children }) {
   );
   const [showAddLoginScreen, setShowAddLoginScreen] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
+  const [filteredList, setFilteredList] = useState([]);
 
   useEffect(() => {
     localStorage.setItem("loginList", JSON.stringify(loginList));
@@ -35,6 +36,8 @@ export function LoginListThemeProvider({ children }) {
         activeItem,
         setActiveItem,
         handleDelete,
+        filteredList,
+        setFilteredList,
       }}
     >
       {children}

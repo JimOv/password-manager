@@ -46,5 +46,28 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 20px 0px;
+}
+
+.add-new-login-screen .modal form button:hover{
+    background-color: #0056b3;
+}
+.add-new-login-screen .modal form select{
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.add-new-login-screen .modal form label{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.add-new-login-screen .modal button.closeBtn{
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+
 }
