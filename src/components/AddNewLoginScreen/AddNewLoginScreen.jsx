@@ -56,6 +56,12 @@ const AddNewLoginScreen = () => {
       alert("Please fill in all fields");
       return;
     }
+
+    if (!website.includes("www.") || !website.includes(".")) {
+      alert("Please enter a valid website address");
+      return;
+    }
+
     const newLogin = {
       title: title,
       website: website,

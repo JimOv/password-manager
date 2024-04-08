@@ -29,7 +29,17 @@ const ShowLoginDetailsScreen = () => {
             </div>
             <div className="login-detail">
               <p>Website:</p>
-              <p>{loginList[activeItem].website}</p>
+              <a
+                href={
+                  loginList[activeItem].website.includes("http")
+                    ? loginList[activeItem].website
+                    : `http://${loginList[activeItem].website}`
+                }
+                target="_blank"
+                rel="noreferrer"
+              >
+                {loginList[activeItem].website}
+              </a>
             </div>
             <div className="login-detail">
               <p>Username:</p>
