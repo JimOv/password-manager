@@ -19,7 +19,7 @@ const Search = () => {
     );
     setFilteredList(filteredList);
     setActiveItem(null);
-  }, [searchQuery]);
+  }, [searchQuery, loginList, setFilteredList, setActiveItem]);
 
   return (
     <div className="search-bar">
